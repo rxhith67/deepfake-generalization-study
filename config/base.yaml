@@ -1,0 +1,59 @@
+project_name: deepfake-detection
+seed: 42
+device: auto
+
+data:
+  root: ./data
+  train_csv: ./data/splits/train.csv
+  val_csv: ./data/splits/val.csv
+  test_csv: ./data/splits/test.csv
+  # Zero is the most reliable default on Windows and in Colab notebooks.
+  # Increase to 2-4 on Linux after confirming the storage can keep up.
+  num_workers: 0
+  faceforensics:
+    path: ./data/processed/faceforensics
+    compression: c23
+    methods: [Deepfakes, Face2Face, FaceSwap, NeuralTextures]
+    frames_per_video: 30
+  celeb_df:
+    path: ./data/processed/celeb_df
+  ai_genbench:
+    path: ./data/processed/ai_genbench
+    face_only: true
+
+split:
+  train_ratio: 0.70
+  val_ratio: 0.15
+  test_ratio: 0.15
+  by: video_id
+  seed: 42
+
+model:
+  name: meso
+  pretrained: false
+  freeze_epochs: 0
+
+training:
+  image_size: 224
+  optimizer: adamw
+  lr: 1.0e-4
+  backbone_lr: 1.0e-5
+  weight_decay: 1.0e-4
+  scheduler: cosine
+  epochs: 15
+  batch_size: 32
+  early_stopping_patience: 3
+  amp: true
+  threshold: 0.5
+  balanced_sampling: true
+
+augmentation:
+  hflip: 0.5
+  rotate_limit: 10
+  color_jitter: 0.2
+  jpeg_quality_range: [30, 100]
+  jpeg_prob: 0.5
+
+logging:
+  output_dir: ./outputs
+  save_top_k: 1

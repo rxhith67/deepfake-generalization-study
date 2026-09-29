@@ -1,0 +1,98 @@
+{
+  "checkpoint": "/mnt/deepfake/generalization_upgrade/training/lomo_NeuralTextures/xception/checkpoints/xception_best.pt",
+  "checkpoint_sha256": "bcb0a32f24f6626e436742b74bc7cf51de5dc9955d6555937855ae5e21cbe96a",
+  "config": {
+    "project_name": "deepfake-detection",
+    "seed": 42,
+    "device": "cuda",
+    "data": {
+      "root": "/tmp/deepfake_data",
+      "train_csv": "/root/protocol/lomo_NeuralTextures/train.csv",
+      "val_csv": "/root/protocol/lomo_NeuralTextures/val.csv",
+      "test_csv": "/root/protocol/lomo_NeuralTextures/test.csv",
+      "num_workers": 4,
+      "faceforensics": {
+        "path": "./data/processed/faceforensics",
+        "compression": "c23",
+        "methods": [
+          "Deepfakes",
+          "Face2Face",
+          "FaceSwap",
+          "NeuralTextures"
+        ],
+        "frames_per_video": 30
+      },
+      "celeb_df": {
+        "path": "./data/processed/celeb_df"
+      },
+      "ai_genbench": {
+        "path": "./data/processed/ai_genbench",
+        "face_only": true
+      }
+    },
+    "split": {
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "test_ratio": 0.15,
+      "by": "video_id",
+      "seed": 42
+    },
+    "model": {
+      "name": "xception",
+      "pretrained": true,
+      "freeze_epochs": 3,
+      "freeze_fraction": 0.6
+    },
+    "training": {
+      "image_size": 299,
+      "optimizer": "adamw",
+      "lr": 0.0001,
+      "backbone_lr": 1e-05,
+      "weight_decay": 0.0001,
+      "scheduler": "cosine",
+      "epochs": 12,
+      "batch_size": 32,
+      "early_stopping_patience": 3,
+      "amp": true,
+      "threshold": 0.5,
+      "balanced_sampling": true,
+      "normalization_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "normalization_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "interpolation": "bicubic",
+      "pin_memory": true,
+      "resumable": true
+    },
+    "augmentation": {
+      "hflip": 0.5,
+      "rotate_limit": 10,
+      "color_jitter": 0.2,
+      "jpeg_quality_range": [
+        30,
+        100
+      ],
+      "jpeg_prob": 0.5
+    },
+    "logging": {
+      "output_dir": "/mnt/deepfake/generalization_upgrade/training/lomo_NeuralTextures/xception",
+      "save_top_k": 1
+    },
+    "experiment": {
+      "protocol_id": "source_video_disjoint_v1",
+      "condition": "lomo_NeuralTextures",
+      "initialization": "imagenet",
+      "manifest_hashes": {
+        "train": "e11be43b7d7b1e7f66238ca26da88999b20ba78fd789860440db3fcd261aaef9",
+        "val": "a0766b6ccb8a4004644d62c0bb42ae4e8ce9cdb2d59ebf42d2a012126dda4ed9",
+        "test": "fc25818bced3946d4151adf76adae9704a06b04e4e50e1e4fd9af923066ba5f6"
+      }
+    }
+  }
+}

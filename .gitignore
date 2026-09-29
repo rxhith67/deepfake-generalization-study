@@ -1,0 +1,49 @@
+# Restricted-access / regenerable dataset content (do not commit: FaceForensics++
+# and other datasets here require separate access approval and are non-commercial).
+data/raw/**
+data/processed/**
+data/frames/**
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+!data/frames/.gitkeep
+
+# Trained model weights (large binaries, some >100MB GitHub's limit;
+# regenerate via src/train.py)
+*.pt
+*.pth
+!outputs/checkpoints/.gitkeep
+
+# Dataset archives / bulk transfer artefacts
+*.tar
+*.tar.gz
+outputs/modal_downloads/**
+outputs/generalization_upgrade/**/normalized_external/**
+outputs/generalization_upgrade/**/cache/**
+outputs/generalization_upgrade/**/reconstructions/**
+outputs/generalization_upgrade/**/*.npz
+
+download-FaceForensics.py
+face_forensics_Script.py
+*faceforensics*download*.url
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+
+# Notebooks / editors / OS
+.ipynb_checkpoints/
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+
+# Isolated optional Tier-2 packages (diffusers/lpips); reinstall per requirements, do not commit
+.tier2_pkgs/

@@ -1,0 +1,2056 @@
+{
+  "xception": {
+    "100": {
+      "checkpoint": "outputs\\checkpoints\\xception_100video_corrected_best.pt",
+      "model": "xception",
+      "dataset_csv": "data\\splits\\test.csv",
+      "jpeg_quality": 100,
+      "metrics": {
+        "n": 2250,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.7208888888888889,
+        "balanced_accuracy": 0.7105555555555556,
+        "precision": 0.9046961325966851,
+        "recall": 0.7277777777777777,
+        "specificity": 0.6933333333333334,
+        "false_positive_rate": 0.30666666666666664,
+        "f1": 0.8066502463054187,
+        "auc": 0.8020407407407407,
+        "confusion": [
+          [
+            312,
+            138
+          ],
+          [
+            490,
+            1310
+          ]
+        ]
+      },
+      "per_method": {
+        "Deepfakes": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7533333333333333,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.7533333333333333,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.8593155893536122,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              111,
+              339
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.8311111111111111,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.8311111111111111,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.9077669902912622,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              76,
+              374
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6288888888888889,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.6288888888888889,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.772169167803547,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              167,
+              283
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6977777777777778,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.6977777777777778,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.8219895287958116,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              136,
+              314
+            ]
+          ]
+        },
+        "real": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6933333333333334,
+          "balanced_accuracy": NaN,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.6933333333333334,
+          "false_positive_rate": 0.30666666666666664,
+          "f1": 0.0,
+          "auc": NaN,
+          "confusion": [
+            [
+              312,
+              138
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "binary_per_method": {
+        "Deepfakes": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7233333333333334,
+          "balanced_accuracy": 0.7233333333333334,
+          "precision": 0.710691823899371,
+          "recall": 0.7533333333333333,
+          "specificity": 0.6933333333333334,
+          "false_positive_rate": 0.30666666666666664,
+          "f1": 0.7313915857605178,
+          "auc": 0.8113827160493827,
+          "confusion": [
+            [
+              312,
+              138
+            ],
+            [
+              111,
+              339
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7622222222222222,
+          "balanced_accuracy": 0.7622222222222222,
+          "precision": 0.73046875,
+          "recall": 0.8311111111111111,
+          "specificity": 0.6933333333333334,
+          "false_positive_rate": 0.30666666666666664,
+          "f1": 0.7775467775467776,
+          "auc": 0.8707506172839505,
+          "confusion": [
+            [
+              312,
+              138
+            ],
+            [
+              76,
+              374
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6611111111111111,
+          "balanced_accuracy": 0.6611111111111112,
+          "precision": 0.672209026128266,
+          "recall": 0.6288888888888889,
+          "specificity": 0.6933333333333334,
+          "false_positive_rate": 0.30666666666666664,
+          "f1": 0.6498277841561424,
+          "auc": 0.7421185185185184,
+          "confusion": [
+            [
+              312,
+              138
+            ],
+            [
+              167,
+              283
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6955555555555556,
+          "balanced_accuracy": 0.6955555555555556,
+          "precision": 0.6946902654867256,
+          "recall": 0.6977777777777778,
+          "specificity": 0.6933333333333334,
+          "false_positive_rate": 0.30666666666666664,
+          "f1": 0.6962305986696231,
+          "auc": 0.783911111111111,
+          "confusion": [
+            [
+              312,
+              138
+            ],
+            [
+              136,
+              314
+            ]
+          ]
+        }
+      },
+      "video_metrics": {
+        "n": 75,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.7066666666666667,
+        "balanced_accuracy": 0.7916666666666667,
+        "precision": 0.975,
+        "recall": 0.65,
+        "specificity": 0.9333333333333333,
+        "false_positive_rate": 0.06666666666666665,
+        "f1": 0.78,
+        "auc": 0.84,
+        "confusion": [
+          [
+            14,
+            1
+          ],
+          [
+            21,
+            39
+          ]
+        ]
+      },
+      "video_binary_per_method": {
+        "Deepfakes": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8,
+          "precision": 0.9090909090909091,
+          "recall": 0.6666666666666666,
+          "specificity": 0.9333333333333333,
+          "false_positive_rate": 0.06666666666666665,
+          "f1": 0.7692307692307693,
+          "auc": 0.8533333333333333,
+          "confusion": [
+            [
+              14,
+              1
+            ],
+            [
+              5,
+              10
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.8666666666666667,
+          "balanced_accuracy": 0.8666666666666667,
+          "precision": 0.9230769230769231,
+          "recall": 0.8,
+          "specificity": 0.9333333333333333,
+          "false_positive_rate": 0.06666666666666665,
+          "f1": 0.8571428571428571,
+          "auc": 0.9066666666666667,
+          "confusion": [
+            [
+              14,
+              1
+            ],
+            [
+              3,
+              12
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7,
+          "balanced_accuracy": 0.7,
+          "precision": 0.875,
+          "recall": 0.4666666666666667,
+          "specificity": 0.9333333333333333,
+          "false_positive_rate": 0.06666666666666665,
+          "f1": 0.6086956521739131,
+          "auc": 0.7733333333333333,
+          "confusion": [
+            [
+              14,
+              1
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8,
+          "precision": 0.9090909090909091,
+          "recall": 0.6666666666666666,
+          "specificity": 0.9333333333333333,
+          "false_positive_rate": 0.06666666666666665,
+          "f1": 0.7692307692307693,
+          "auc": 0.8266666666666667,
+          "confusion": [
+            [
+              14,
+              1
+            ],
+            [
+              5,
+              10
+            ]
+          ]
+        }
+      }
+    },
+    "90": {
+      "checkpoint": "outputs\\checkpoints\\xception_100video_corrected_best.pt",
+      "model": "xception",
+      "dataset_csv": "data\\splits\\test.csv",
+      "jpeg_quality": 90,
+      "metrics": {
+        "n": 2250,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.7213333333333334,
+        "balanced_accuracy": 0.7083333333333333,
+        "precision": 0.9030927835051547,
+        "recall": 0.73,
+        "specificity": 0.6866666666666666,
+        "false_positive_rate": 0.31333333333333335,
+        "f1": 0.8073732718894009,
+        "auc": 0.7917895061728395,
+        "confusion": [
+          [
+            309,
+            141
+          ],
+          [
+            486,
+            1314
+          ]
+        ]
+      },
+      "per_method": {
+        "Deepfakes": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7755555555555556,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.7755555555555556,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.8735919899874843,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              101,
+              349
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.8311111111111111,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.8311111111111111,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.9077669902912622,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              76,
+              374
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6311111111111111,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.6311111111111111,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.773841961852861,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              166,
+              284
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6822222222222222,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.6822222222222222,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.8110964332892999,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              143,
+              307
+            ]
+          ]
+        },
+        "real": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6866666666666666,
+          "balanced_accuracy": NaN,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.6866666666666666,
+          "false_positive_rate": 0.31333333333333335,
+          "f1": 0.0,
+          "auc": NaN,
+          "confusion": [
+            [
+              309,
+              141
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "binary_per_method": {
+        "Deepfakes": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7311111111111112,
+          "balanced_accuracy": 0.731111111111111,
+          "precision": 0.7122448979591837,
+          "recall": 0.7755555555555556,
+          "specificity": 0.6866666666666666,
+          "false_positive_rate": 0.31333333333333335,
+          "f1": 0.7425531914893617,
+          "auc": 0.8063111111111112,
+          "confusion": [
+            [
+              309,
+              141
+            ],
+            [
+              101,
+              349
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7588888888888888,
+          "balanced_accuracy": 0.758888888888889,
+          "precision": 0.7262135922330097,
+          "recall": 0.8311111111111111,
+          "specificity": 0.6866666666666666,
+          "false_positive_rate": 0.31333333333333335,
+          "f1": 0.7751295336787565,
+          "auc": 0.8629728395061728,
+          "confusion": [
+            [
+              309,
+              141
+            ],
+            [
+              76,
+              374
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6588888888888889,
+          "balanced_accuracy": 0.6588888888888889,
+          "precision": 0.668235294117647,
+          "recall": 0.6311111111111111,
+          "specificity": 0.6866666666666666,
+          "false_positive_rate": 0.31333333333333335,
+          "f1": 0.6491428571428571,
+          "auc": 0.7287160493827161,
+          "confusion": [
+            [
+              309,
+              141
+            ],
+            [
+              166,
+              284
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6844444444444444,
+          "balanced_accuracy": 0.6844444444444444,
+          "precision": 0.6852678571428571,
+          "recall": 0.6822222222222222,
+          "specificity": 0.6866666666666666,
+          "false_positive_rate": 0.31333333333333335,
+          "f1": 0.6837416481069042,
+          "auc": 0.7691580246913581,
+          "confusion": [
+            [
+              309,
+              141
+            ],
+            [
+              143,
+              307
+            ]
+          ]
+        }
+      },
+      "video_metrics": {
+        "n": 75,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.72,
+        "balanced_accuracy": 0.775,
+        "precision": 0.9534883720930233,
+        "recall": 0.6833333333333333,
+        "specificity": 0.8666666666666667,
+        "false_positive_rate": 0.1333333333333333,
+        "f1": 0.7961165048543689,
+        "auc": 0.8277777777777777,
+        "confusion": [
+          [
+            13,
+            2
+          ],
+          [
+            19,
+            41
+          ]
+        ]
+      },
+      "video_binary_per_method": {
+        "Deepfakes": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7666666666666667,
+          "balanced_accuracy": 0.7666666666666666,
+          "precision": 0.8333333333333334,
+          "recall": 0.6666666666666666,
+          "specificity": 0.8666666666666667,
+          "false_positive_rate": 0.1333333333333333,
+          "f1": 0.7407407407407407,
+          "auc": 0.8444444444444444,
+          "confusion": [
+            [
+              13,
+              2
+            ],
+            [
+              5,
+              10
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.8666666666666667,
+          "balanced_accuracy": 0.8666666666666667,
+          "precision": 0.8666666666666667,
+          "recall": 0.8666666666666667,
+          "specificity": 0.8666666666666667,
+          "false_positive_rate": 0.1333333333333333,
+          "f1": 0.8666666666666667,
+          "auc": 0.9066666666666667,
+          "confusion": [
+            [
+              13,
+              2
+            ],
+            [
+              2,
+              13
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7,
+          "balanced_accuracy": 0.7,
+          "precision": 0.8,
+          "recall": 0.5333333333333333,
+          "specificity": 0.8666666666666667,
+          "false_positive_rate": 0.1333333333333333,
+          "f1": 0.64,
+          "auc": 0.76,
+          "confusion": [
+            [
+              13,
+              2
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7666666666666667,
+          "balanced_accuracy": 0.7666666666666666,
+          "precision": 0.8333333333333334,
+          "recall": 0.6666666666666666,
+          "specificity": 0.8666666666666667,
+          "false_positive_rate": 0.1333333333333333,
+          "f1": 0.7407407407407407,
+          "auc": 0.7999999999999999,
+          "confusion": [
+            [
+              13,
+              2
+            ],
+            [
+              5,
+              10
+            ]
+          ]
+        }
+      }
+    },
+    "60": {
+      "checkpoint": "outputs\\checkpoints\\xception_100video_corrected_best.pt",
+      "model": "xception",
+      "dataset_csv": "data\\splits\\test.csv",
+      "jpeg_quality": 60,
+      "metrics": {
+        "n": 2250,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.6702222222222223,
+        "balanced_accuracy": 0.6772222222222222,
+        "precision": 0.8953662182361734,
+        "recall": 0.6655555555555556,
+        "specificity": 0.6888888888888889,
+        "false_positive_rate": 0.3111111111111111,
+        "f1": 0.7635436583811345,
+        "auc": 0.7602672839506173,
+        "confusion": [
+          [
+            310,
+            140
+          ],
+          [
+            602,
+            1198
+          ]
+        ]
+      },
+      "per_method": {
+        "Deepfakes": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6688888888888889,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.6688888888888889,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.8015978695073236,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              149,
+              301
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.8088888888888889,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.8088888888888889,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.8943488943488943,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              86,
+              364
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.58,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.58,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.7341772151898734,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              189,
+              261
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6044444444444445,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.6044444444444445,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.7534626038781164,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              178,
+              272
+            ]
+          ]
+        },
+        "real": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6888888888888889,
+          "balanced_accuracy": NaN,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.6888888888888889,
+          "false_positive_rate": 0.3111111111111111,
+          "f1": 0.0,
+          "auc": NaN,
+          "confusion": [
+            [
+              310,
+              140
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "binary_per_method": {
+        "Deepfakes": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6788888888888889,
+          "balanced_accuracy": 0.6788888888888889,
+          "precision": 0.6825396825396826,
+          "recall": 0.6688888888888889,
+          "specificity": 0.6888888888888889,
+          "false_positive_rate": 0.3111111111111111,
+          "f1": 0.675645342312009,
+          "auc": 0.7600395061728396,
+          "confusion": [
+            [
+              310,
+              140
+            ],
+            [
+              149,
+              301
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7488888888888889,
+          "balanced_accuracy": 0.7488888888888889,
+          "precision": 0.7222222222222222,
+          "recall": 0.8088888888888889,
+          "specificity": 0.6888888888888889,
+          "false_positive_rate": 0.3111111111111111,
+          "f1": 0.7631027253668763,
+          "auc": 0.8473037037037037,
+          "confusion": [
+            [
+              310,
+              140
+            ],
+            [
+              86,
+              364
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6344444444444445,
+          "balanced_accuracy": 0.6344444444444444,
+          "precision": 0.6508728179551122,
+          "recall": 0.58,
+          "specificity": 0.6888888888888889,
+          "false_positive_rate": 0.3111111111111111,
+          "f1": 0.6133960047003525,
+          "auc": 0.7064271604938271,
+          "confusion": [
+            [
+              310,
+              140
+            ],
+            [
+              189,
+              261
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6466666666666666,
+          "balanced_accuracy": 0.6466666666666667,
+          "precision": 0.6601941747572816,
+          "recall": 0.6044444444444445,
+          "specificity": 0.6888888888888889,
+          "false_positive_rate": 0.3111111111111111,
+          "f1": 0.6310904872389791,
+          "auc": 0.7272987654320988,
+          "confusion": [
+            [
+              310,
+              140
+            ],
+            [
+              178,
+              272
+            ]
+          ]
+        }
+      },
+      "video_metrics": {
+        "n": 75,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.64,
+        "balanced_accuracy": 0.7,
+        "precision": 0.9230769230769231,
+        "recall": 0.6,
+        "specificity": 0.8,
+        "false_positive_rate": 0.19999999999999996,
+        "f1": 0.7272727272727273,
+        "auc": 0.7855555555555556,
+        "confusion": [
+          [
+            12,
+            3
+          ],
+          [
+            24,
+            36
+          ]
+        ]
+      },
+      "video_binary_per_method": {
+        "Deepfakes": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7,
+          "balanced_accuracy": 0.7,
+          "precision": 0.75,
+          "recall": 0.6,
+          "specificity": 0.8,
+          "false_positive_rate": 0.19999999999999996,
+          "f1": 0.6666666666666666,
+          "auc": 0.7911111111111111,
+          "confusion": [
+            [
+              12,
+              3
+            ],
+            [
+              6,
+              9
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8,
+          "precision": 0.8,
+          "recall": 0.8,
+          "specificity": 0.8,
+          "false_positive_rate": 0.19999999999999996,
+          "f1": 0.8,
+          "auc": 0.8844444444444445,
+          "confusion": [
+            [
+              12,
+              3
+            ],
+            [
+              3,
+              12
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6333333333333333,
+          "balanced_accuracy": 0.6333333333333333,
+          "precision": 0.7,
+          "recall": 0.4666666666666667,
+          "specificity": 0.8,
+          "false_positive_rate": 0.19999999999999996,
+          "f1": 0.56,
+          "auc": 0.7288888888888889,
+          "confusion": [
+            [
+              12,
+              3
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6666666666666666,
+          "balanced_accuracy": 0.6666666666666667,
+          "precision": 0.7272727272727273,
+          "recall": 0.5333333333333333,
+          "specificity": 0.8,
+          "false_positive_rate": 0.19999999999999996,
+          "f1": 0.6153846153846154,
+          "auc": 0.7377777777777778,
+          "confusion": [
+            [
+              12,
+              3
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    "40": {
+      "checkpoint": "outputs\\checkpoints\\xception_100video_corrected_best.pt",
+      "model": "xception",
+      "dataset_csv": "data\\splits\\test.csv",
+      "jpeg_quality": 40,
+      "metrics": {
+        "n": 2250,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.6368888888888888,
+        "balanced_accuracy": 0.6622222222222223,
+        "precision": 0.8935148118494796,
+        "recall": 0.62,
+        "specificity": 0.7044444444444444,
+        "false_positive_rate": 0.29555555555555557,
+        "f1": 0.7320432928829125,
+        "auc": 0.7373913580246914,
+        "confusion": [
+          [
+            317,
+            133
+          ],
+          [
+            684,
+            1116
+          ]
+        ]
+      },
+      "per_method": {
+        "Deepfakes": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6222222222222222,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.6222222222222222,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.7671232876712328,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              170,
+              280
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7577777777777778,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.7577777777777778,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.8621997471554994,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              109,
+              341
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.5177777777777778,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.5177777777777778,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.6822840409956076,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              217,
+              233
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.5822222222222222,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.5822222222222222,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.7359550561797753,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              188,
+              262
+            ]
+          ]
+        },
+        "real": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7044444444444444,
+          "balanced_accuracy": NaN,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.7044444444444444,
+          "false_positive_rate": 0.29555555555555557,
+          "f1": 0.0,
+          "auc": NaN,
+          "confusion": [
+            [
+              317,
+              133
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "binary_per_method": {
+        "Deepfakes": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6633333333333333,
+          "balanced_accuracy": 0.6633333333333333,
+          "precision": 0.6779661016949152,
+          "recall": 0.6222222222222222,
+          "specificity": 0.7044444444444444,
+          "false_positive_rate": 0.29555555555555557,
+          "f1": 0.6488991888760139,
+          "auc": 0.7373432098765431,
+          "confusion": [
+            [
+              317,
+              133
+            ],
+            [
+              170,
+              280
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7311111111111112,
+          "balanced_accuracy": 0.731111111111111,
+          "precision": 0.7194092827004219,
+          "recall": 0.7577777777777778,
+          "specificity": 0.7044444444444444,
+          "false_positive_rate": 0.29555555555555557,
+          "f1": 0.7380952380952381,
+          "auc": 0.8181629629629629,
+          "confusion": [
+            [
+              317,
+              133
+            ],
+            [
+              109,
+              341
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6111111111111112,
+          "balanced_accuracy": 0.6111111111111112,
+          "precision": 0.6366120218579235,
+          "recall": 0.5177777777777778,
+          "specificity": 0.7044444444444444,
+          "false_positive_rate": 0.29555555555555557,
+          "f1": 0.571078431372549,
+          "auc": 0.6831308641975309,
+          "confusion": [
+            [
+              317,
+              133
+            ],
+            [
+              217,
+              233
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6433333333333333,
+          "balanced_accuracy": 0.6433333333333333,
+          "precision": 0.6632911392405063,
+          "recall": 0.5822222222222222,
+          "specificity": 0.7044444444444444,
+          "false_positive_rate": 0.29555555555555557,
+          "f1": 0.6201183431952663,
+          "auc": 0.7109283950617283,
+          "confusion": [
+            [
+              317,
+              133
+            ],
+            [
+              188,
+              262
+            ]
+          ]
+        }
+      },
+      "video_metrics": {
+        "n": 75,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.6,
+        "balanced_accuracy": 0.675,
+        "precision": 0.9166666666666666,
+        "recall": 0.55,
+        "specificity": 0.8,
+        "false_positive_rate": 0.19999999999999996,
+        "f1": 0.6875,
+        "auc": 0.77,
+        "confusion": [
+          [
+            12,
+            3
+          ],
+          [
+            27,
+            33
+          ]
+        ]
+      },
+      "video_binary_per_method": {
+        "Deepfakes": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6666666666666666,
+          "balanced_accuracy": 0.6666666666666667,
+          "precision": 0.7272727272727273,
+          "recall": 0.5333333333333333,
+          "specificity": 0.8,
+          "false_positive_rate": 0.19999999999999996,
+          "f1": 0.6153846153846154,
+          "auc": 0.7733333333333333,
+          "confusion": [
+            [
+              12,
+              3
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7333333333333333,
+          "balanced_accuracy": 0.7333333333333334,
+          "precision": 0.7692307692307693,
+          "recall": 0.6666666666666666,
+          "specificity": 0.8,
+          "false_positive_rate": 0.19999999999999996,
+          "f1": 0.7142857142857143,
+          "auc": 0.8577777777777778,
+          "confusion": [
+            [
+              12,
+              3
+            ],
+            [
+              5,
+              10
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6333333333333333,
+          "balanced_accuracy": 0.6333333333333333,
+          "precision": 0.7,
+          "recall": 0.4666666666666667,
+          "specificity": 0.8,
+          "false_positive_rate": 0.19999999999999996,
+          "f1": 0.56,
+          "auc": 0.7111111111111111,
+          "confusion": [
+            [
+              12,
+              3
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6666666666666666,
+          "balanced_accuracy": 0.6666666666666667,
+          "precision": 0.7272727272727273,
+          "recall": 0.5333333333333333,
+          "specificity": 0.8,
+          "false_positive_rate": 0.19999999999999996,
+          "f1": 0.6153846153846154,
+          "auc": 0.7377777777777778,
+          "confusion": [
+            [
+              12,
+              3
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        }
+      }
+    },
+    "20": {
+      "checkpoint": "outputs\\checkpoints\\xception_100video_corrected_best.pt",
+      "model": "xception",
+      "dataset_csv": "data\\splits\\test.csv",
+      "jpeg_quality": 20,
+      "metrics": {
+        "n": 2250,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.5857777777777777,
+        "balanced_accuracy": 0.6277777777777778,
+        "precision": 0.8807017543859649,
+        "recall": 0.5577777777777778,
+        "specificity": 0.6977777777777778,
+        "false_positive_rate": 0.30222222222222217,
+        "f1": 0.6829931972789116,
+        "auc": 0.6954592592592592,
+        "confusion": [
+          [
+            314,
+            136
+          ],
+          [
+            796,
+            1004
+          ]
+        ]
+      },
+      "per_method": {
+        "Deepfakes": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.5622222222222222,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.5622222222222222,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.7197724039829303,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              197,
+              253
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6533333333333333,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.6533333333333333,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.7903225806451613,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              156,
+              294
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.5044444444444445,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.5044444444444445,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.670605612998523,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              223,
+              227
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.5111111111111111,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.5111111111111111,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.6764705882352942,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              220,
+              230
+            ]
+          ]
+        },
+        "real": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6977777777777778,
+          "balanced_accuracy": NaN,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.6977777777777778,
+          "false_positive_rate": 0.30222222222222217,
+          "f1": 0.0,
+          "auc": NaN,
+          "confusion": [
+            [
+              314,
+              136
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "binary_per_method": {
+        "Deepfakes": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.63,
+          "balanced_accuracy": 0.63,
+          "precision": 0.6503856041131105,
+          "recall": 0.5622222222222222,
+          "specificity": 0.6977777777777778,
+          "false_positive_rate": 0.30222222222222217,
+          "f1": 0.6030989272943981,
+          "auc": 0.7099753086419752,
+          "confusion": [
+            [
+              314,
+              136
+            ],
+            [
+              197,
+              253
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6755555555555556,
+          "balanced_accuracy": 0.6755555555555556,
+          "precision": 0.6837209302325581,
+          "recall": 0.6533333333333333,
+          "specificity": 0.6977777777777778,
+          "false_positive_rate": 0.30222222222222217,
+          "f1": 0.6681818181818182,
+          "auc": 0.7609037037037036,
+          "confusion": [
+            [
+              314,
+              136
+            ],
+            [
+              156,
+              294
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6011111111111112,
+          "balanced_accuracy": 0.6011111111111112,
+          "precision": 0.6253443526170799,
+          "recall": 0.5044444444444445,
+          "specificity": 0.6977777777777778,
+          "false_positive_rate": 0.30222222222222217,
+          "f1": 0.5584255842558425,
+          "auc": 0.6548888888888889,
+          "confusion": [
+            [
+              314,
+              136
+            ],
+            [
+              223,
+              227
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6044444444444445,
+          "balanced_accuracy": 0.6044444444444445,
+          "precision": 0.6284153005464481,
+          "recall": 0.5111111111111111,
+          "specificity": 0.6977777777777778,
+          "false_positive_rate": 0.30222222222222217,
+          "f1": 0.5637254901960784,
+          "auc": 0.6560691358024692,
+          "confusion": [
+            [
+              314,
+              136
+            ],
+            [
+              220,
+              230
+            ]
+          ]
+        }
+      },
+      "video_metrics": {
+        "n": 75,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.5333333333333333,
+        "balanced_accuracy": 0.6083333333333333,
+        "precision": 0.8787878787878788,
+        "recall": 0.48333333333333334,
+        "specificity": 0.7333333333333333,
+        "false_positive_rate": 0.2666666666666667,
+        "f1": 0.6236559139784946,
+        "auc": 0.7388888888888889,
+        "confusion": [
+          [
+            11,
+            4
+          ],
+          [
+            31,
+            29
+          ]
+        ]
+      },
+      "video_binary_per_method": {
+        "Deepfakes": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6333333333333333,
+          "balanced_accuracy": 0.6333333333333333,
+          "precision": 0.6666666666666666,
+          "recall": 0.5333333333333333,
+          "specificity": 0.7333333333333333,
+          "false_positive_rate": 0.2666666666666667,
+          "f1": 0.5925925925925926,
+          "auc": 0.7422222222222222,
+          "confusion": [
+            [
+              11,
+              4
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6333333333333333,
+          "balanced_accuracy": 0.6333333333333333,
+          "precision": 0.6666666666666666,
+          "recall": 0.5333333333333333,
+          "specificity": 0.7333333333333333,
+          "false_positive_rate": 0.2666666666666667,
+          "f1": 0.5925925925925926,
+          "auc": 0.8355555555555556,
+          "confusion": [
+            [
+              11,
+              4
+            ],
+            [
+              7,
+              8
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.5666666666666667,
+          "balanced_accuracy": 0.5666666666666667,
+          "precision": 0.6,
+          "recall": 0.4,
+          "specificity": 0.7333333333333333,
+          "false_positive_rate": 0.2666666666666667,
+          "f1": 0.48,
+          "auc": 0.6799999999999999,
+          "confusion": [
+            [
+              11,
+              4
+            ],
+            [
+              9,
+              6
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.6,
+          "precision": 0.6363636363636364,
+          "recall": 0.4666666666666667,
+          "specificity": 0.7333333333333333,
+          "false_positive_rate": 0.2666666666666667,
+          "f1": 0.5384615384615384,
+          "auc": 0.6977777777777777,
+          "confusion": [
+            [
+              11,
+              4
+            ],
+            [
+              8,
+              7
+            ]
+          ]
+        }
+      }
+    },
+    "10": {
+      "checkpoint": "outputs\\checkpoints\\xception_100video_corrected_best.pt",
+      "model": "xception",
+      "dataset_csv": "data\\splits\\test.csv",
+      "jpeg_quality": 10,
+      "metrics": {
+        "n": 2250,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.5013333333333333,
+        "balanced_accuracy": 0.6041666666666666,
+        "precision": 0.8852272727272728,
+        "recall": 0.43277777777777776,
+        "specificity": 0.7755555555555556,
+        "false_positive_rate": 0.22444444444444445,
+        "f1": 0.5813432835820895,
+        "auc": 0.6552419753086419,
+        "confusion": [
+          [
+            349,
+            101
+          ],
+          [
+            1021,
+            779
+          ]
+        ]
+      },
+      "per_method": {
+        "Deepfakes": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.5844444444444444,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.5844444444444444,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.7377279102384292,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              187,
+              263
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.42444444444444446,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.42444444444444446,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.5959438377535101,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              259,
+              191
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.3933333333333333,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.3933333333333333,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.5645933014354066,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              273,
+              177
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.3288888888888889,
+          "balanced_accuracy": NaN,
+          "precision": 1.0,
+          "recall": 0.3288888888888889,
+          "specificity": 0.0,
+          "false_positive_rate": 1.0,
+          "f1": 0.49498327759197325,
+          "auc": NaN,
+          "confusion": [
+            [
+              0,
+              0
+            ],
+            [
+              302,
+              148
+            ]
+          ]
+        },
+        "real": {
+          "n": 450,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7755555555555556,
+          "balanced_accuracy": NaN,
+          "precision": 0.0,
+          "recall": 0.0,
+          "specificity": 0.7755555555555556,
+          "false_positive_rate": 0.22444444444444445,
+          "f1": 0.0,
+          "auc": NaN,
+          "confusion": [
+            [
+              349,
+              101
+            ],
+            [
+              0,
+              0
+            ]
+          ]
+        }
+      },
+      "binary_per_method": {
+        "Deepfakes": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.68,
+          "balanced_accuracy": 0.6799999999999999,
+          "precision": 0.7225274725274725,
+          "recall": 0.5844444444444444,
+          "specificity": 0.7755555555555556,
+          "false_positive_rate": 0.22444444444444445,
+          "f1": 0.6461916461916462,
+          "auc": 0.7395012345679013,
+          "confusion": [
+            [
+              349,
+              101
+            ],
+            [
+              187,
+              263
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.6,
+          "precision": 0.6541095890410958,
+          "recall": 0.42444444444444446,
+          "specificity": 0.7755555555555556,
+          "false_positive_rate": 0.22444444444444445,
+          "f1": 0.5148247978436657,
+          "auc": 0.6536592592592593,
+          "confusion": [
+            [
+              349,
+              101
+            ],
+            [
+              259,
+              191
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.5844444444444444,
+          "balanced_accuracy": 0.5844444444444444,
+          "precision": 0.6366906474820144,
+          "recall": 0.3933333333333333,
+          "specificity": 0.7755555555555556,
+          "false_positive_rate": 0.22444444444444445,
+          "f1": 0.48626373626373626,
+          "auc": 0.6318370370370371,
+          "confusion": [
+            [
+              349,
+              101
+            ],
+            [
+              273,
+              177
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 900,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.5522222222222222,
+          "balanced_accuracy": 0.5522222222222222,
+          "precision": 0.5943775100401606,
+          "recall": 0.3288888888888889,
+          "specificity": 0.7755555555555556,
+          "false_positive_rate": 0.22444444444444445,
+          "f1": 0.4234620886981402,
+          "auc": 0.5959703703703704,
+          "confusion": [
+            [
+              349,
+              101
+            ],
+            [
+              302,
+              148
+            ]
+          ]
+        }
+      },
+      "video_metrics": {
+        "n": 75,
+        "threshold": 0.8003134727478027,
+        "accuracy": 0.49333333333333335,
+        "balanced_accuracy": 0.6833333333333333,
+        "precision": 1.0,
+        "recall": 0.36666666666666664,
+        "specificity": 1.0,
+        "false_positive_rate": 0.0,
+        "f1": 0.5365853658536586,
+        "auc": 0.7122222222222221,
+        "confusion": [
+          [
+            15,
+            0
+          ],
+          [
+            38,
+            22
+          ]
+        ]
+      },
+      "video_binary_per_method": {
+        "Deepfakes": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.8,
+          "balanced_accuracy": 0.8,
+          "precision": 1.0,
+          "recall": 0.6,
+          "specificity": 1.0,
+          "false_positive_rate": 0.0,
+          "f1": 0.75,
+          "auc": 0.8088888888888889,
+          "confusion": [
+            [
+              15,
+              0
+            ],
+            [
+              6,
+              9
+            ]
+          ]
+        },
+        "Face2Face": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.7,
+          "balanced_accuracy": 0.7,
+          "precision": 1.0,
+          "recall": 0.4,
+          "specificity": 1.0,
+          "false_positive_rate": 0.0,
+          "f1": 0.5714285714285714,
+          "auc": 0.7155555555555556,
+          "confusion": [
+            [
+              15,
+              0
+            ],
+            [
+              9,
+              6
+            ]
+          ]
+        },
+        "FaceSwap": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6,
+          "balanced_accuracy": 0.6,
+          "precision": 1.0,
+          "recall": 0.2,
+          "specificity": 1.0,
+          "false_positive_rate": 0.0,
+          "f1": 0.3333333333333333,
+          "auc": 0.6755555555555555,
+          "confusion": [
+            [
+              15,
+              0
+            ],
+            [
+              12,
+              3
+            ]
+          ]
+        },
+        "NeuralTextures": {
+          "n": 30,
+          "threshold": 0.8003134727478027,
+          "accuracy": 0.6333333333333333,
+          "balanced_accuracy": 0.6333333333333333,
+          "precision": 1.0,
+          "recall": 0.26666666666666666,
+          "specificity": 1.0,
+          "false_positive_rate": 0.0,
+          "f1": 0.42105263157894735,
+          "auc": 0.6488888888888888,
+          "confusion": [
+            [
+              15,
+              0
+            ],
+            [
+              11,
+              4
+            ]
+          ]
+        }
+      }
+    }
+  }
+}

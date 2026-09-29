@@ -1,0 +1,46 @@
+{
+  "protocol_id": "source_video_disjoint_v1",
+  "run_id": "ea04fedb12b83cd6",
+  "person_identity_disjointness": "not established",
+  "counts": {
+    "train": {
+      "images": 16680,
+      "videos": 556,
+      "methods": {
+        "real": 4200,
+        "Deepfakes": 3120,
+        "Face2Face": 3120,
+        "FaceSwap": 3120,
+        "NeuralTextures": 3120
+      }
+    },
+    "val": {
+      "images": 1380,
+      "videos": 46,
+      "methods": {
+        "real": 900,
+        "Deepfakes": 120,
+        "Face2Face": 120,
+        "FaceSwap": 120,
+        "NeuralTextures": 120
+      }
+    },
+    "test": {
+      "images": 1860,
+      "videos": 62,
+      "methods": {
+        "real": 900,
+        "Deepfakes": 240,
+        "Face2Face": 240,
+        "FaceSwap": 240,
+        "NeuralTextures": 240
+      }
+    }
+  },
+  "source_groups": {
+    "train": 140,
+    "val": 30,
+    "test": 30
+  },
+  "excluded_images": 10080
+}

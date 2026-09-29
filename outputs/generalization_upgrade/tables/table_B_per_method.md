@@ -1,0 +1,10 @@
+| model | test_manipulation | auc | balanced_accuracy | f1 |
+| --- | --- | --- | --- | --- |
+| hybrid | Deepfakes | 0.913947 | 0.807778 | 0.814973 |
+| hybrid | Face2Face | 0.902206 | 0.803889 | 0.810521 |
+| hybrid | FaceSwap | 0.893241 | 0.802222 | 0.808602 |
+| hybrid | NeuralTextures | 0.823770 | 0.722222 | 0.708625 |
+| xception | Deepfakes | 0.893670 | 0.821667 | 0.825068 |
+| xception | Face2Face | 0.880249 | 0.780556 | 0.775696 |
+| xception | FaceSwap | 0.847452 | 0.762778 | 0.753036 |
+| xception | NeuralTextures | 0.825338 | 0.735556 | 0.716667 |

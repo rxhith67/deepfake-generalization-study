@@ -1,0 +1,43 @@
+{
+  "run_id": "3143d068a01044b9",
+  "raw_count": 622,
+  "original_count": 576,
+  "retained_count": 576,
+  "retained_by_label": {
+    "0": 288,
+    "1": 288
+  },
+  "template_112": [
+    [
+      38.2946,
+      51.6963
+    ],
+    [
+      73.5318,
+      51.5014
+    ],
+    [
+      56.0252,
+      71.7366
+    ],
+    [
+      41.5493,
+      92.3655
+    ],
+    [
+      70.7299,
+      92.2041
+    ]
+  ],
+  "border_rgb": [
+    127,
+    127,
+    127
+  ],
+  "config": {
+    "image_size": 224,
+    "jpeg_quality": 90,
+    "alignment": "five_landmark_similarity",
+    "interpolation": "linear"
+  }
+}

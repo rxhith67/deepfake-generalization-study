@@ -1,0 +1,22 @@
+{
+  "checkpoint_sha256_verified": true,
+  "manifest_hashes_verified": true,
+  "train_methods": [
+    "Deepfakes",
+    "Face2Face",
+    "FaceSwap",
+    "real"
+  ],
+  "val_methods": [
+    "Deepfakes",
+    "Face2Face",
+    "FaceSwap",
+    "real"
+  ],
+  "heldout_absent_from_train_and_val": true,
+  "recomputed_val_auc": 0.9777376543209877,
+  "training_log_best_val_auc": 0.9777314814814816,
+  "abs_difference_vs_log": 6.172839506102257e-06,
+  "tolerance": 0.001,
+  "frozen_threshold": 0.5074938535690308
+}

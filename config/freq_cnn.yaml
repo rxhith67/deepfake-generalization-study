@@ -1,0 +1,9 @@
+defaults:
+  - base
+model:
+  name: freq_cnn
+  pretrained: false
+training:
+  batch_size: 32
+  epochs: 15
+

@@ -1,0 +1,106 @@
+{
+  "checkpoint": "dc728c791e4897a7eabff57cb9a9d5988224c88eea3e4c57bfbba32a2a0bd8e5",
+  "manifest": "8e44990f31e48e2f107ff17f855f4c0e7cbdca31b94da5e7c3e8b982b56d5d5d",
+  "condition": "Q20",
+  "dataset": "ffpp_source_safe",
+  "split": "test",
+  "protocol": "source_video_disjoint_v1",
+  "seed": 42,
+  "config": {
+    "seed": 42,
+    "protocol_id": "source_video_disjoint_v1",
+    "historical_protocol_id": "historical_target_video_v1",
+    "approved_tiers": [
+      1,
+      2
+    ],
+    "output_dir": "outputs/generalization_upgrade",
+    "device": "auto",
+    "batch_size": 16,
+    "num_workers": 0,
+    "image_size": 224,
+    "data": {
+      "root": "data/processed",
+      "historical_splits": "data/splits_200video",
+      "external_csv": "data/deepfakeface_sd15_paired.csv",
+      "external_raw": "data/raw/deepfakeface_subset"
+    },
+    "checkpoints": {
+      "hybrid": "outputs/modal_downloads/hybrid_200video_full_best.pt",
+      "xception": "outputs/modal_downloads/xception_200video_full_best.pt"
+    },
+    "threshold_source": "validation_only",
+    "calibration_bins": 15,
+    "bootstrap_replicates": 2000,
+    "jpeg_qualities": [
+      100,
+      90,
+      60,
+      40,
+      20,
+      10
+    ],
+    "external_normalization": {
+      "image_size": 224,
+      "jpeg_quality": 90,
+      "alignment": "five_landmark_similarity",
+      "interpolation": "linear"
+    },
+    "frequency": {
+      "cutoffs": [
+        0.1,
+        0.3,
+        0.5
+      ],
+      "band_edges": [
+        0.1,
+        0.3
+      ],
+      "samples_per_group": 240,
+      "radius": "axis_nyquist",
+      "highpass_offset": 0.5
+    },
+    "representation": {
+      "samples_per_group": 240,
+      "feature_layer": "classifier_input",
+      "perplexity": 35,
+      "seed": 42
+    },
+    "gradcam": {
+      "per_category": 2,
+      "target": "fake_logit"
+    },
+    "reconstruction": {
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "subfolder": "vae",
+      "revision": null,
+      "image_size": 256,
+      "batch_size": 4,
+      "posterior": "mode",
+      "metrics": [
+        "mse",
+        "ssim",
+        "lpips"
+      ],
+      "ff_samples_per_group": 120
+    }
+  },
+  "cache_key": "bcddfa881265403b1805f0c7e8adf6d705cbb020db00635ad3fb9a7b3bb5b8bc",
+  "prediction_sha256": "ac22c90f652e6e446c3a0a1d5c6bf07c23cd954d6a9a03046a8270a7eaeaf324",
+  "threshold": 0.8184424042701721,
+  "transform": {
+    "image_size": 224,
+    "mean": [
+      0.485,
+      0.456,
+      0.406
+    ],
+    "std": [
+      0.229,
+      0.224,
+      0.225
+    ],
+    "interpolation": "linear"
+  },
+  "architecture_class": "MaxxVit"
+}

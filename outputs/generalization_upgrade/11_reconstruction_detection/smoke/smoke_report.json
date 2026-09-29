@@ -1,0 +1,40 @@
+{
+  "validation": {
+    "finite_all_metrics": true,
+    "mse_nonnegative": true,
+    "ssim_in_range": true,
+    "lpips_nonnegative": true,
+    "unique_sample_ids": true,
+    "two_classes": true,
+    "expected_n": true,
+    "balanced": true
+  },
+  "reconstruction_shape_range_ok": true,
+  "max_abs_difference_between_two_passes": {
+    "mse": 0.0,
+    "ssim": 0.0,
+    "lpips": 0.0
+  },
+  "deterministic": true,
+  "identical_input_format_for_both_classes": true,
+  "input_formats": [
+    "('float32', (256, 256, 3))"
+  ],
+  "vae_revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+  "lpips": "standard full-network LPIPS, not paper VGG layer 2",
+  "score_means_by_class_for_information_only": {
+    "mse": {
+      "0": 0.0007813322081346996,
+      "1": 0.0007737696560070617
+    },
+    "ssim": {
+      "0": 0.8963515684008598,
+      "1": 0.9027442932128906
+    },
+    "lpips": {
+      "0": 0.036425133468583226,
+      "1": 0.028330168453976512
+    }
+  },
+  "passed": true
+}

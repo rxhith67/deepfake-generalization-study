@@ -1,0 +1,13 @@
+defaults:
+  - base
+model:
+  name: hybrid
+  pretrained: true
+  freeze_epochs: 3
+  freeze_fraction: 0.60
+training:
+  batch_size: 16
+  epochs: 8
+  lr: 1.0e-4
+  backbone_lr: 1.0e-5
+

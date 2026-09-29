@@ -1,0 +1,12 @@
+{
+  "samples_per_group": 240,
+  "gray": "OpenCV BT.601",
+  "mean_subtract": true,
+  "window": null,
+  "dc_excluded": true,
+  "band_edges": [
+    0.1,
+    0.3
+  ],
+  "radius": "axis_nyquist"
+}

@@ -1,0 +1,6 @@
+{
+  "validation_selected_threshold": 0.8212602734565735,
+  "checkpoint_saved_threshold": 0.8184424042701721,
+  "rule": "maximize balanced accuracy on source-disjoint FF++ validation (nearest 0.5 on ties)",
+  "external_used_for_selection": false
+}

@@ -1,0 +1,37 @@
+Assessment Task 1: Project Requirements and Specifications
+Due 2 Oct by 23:59 Points 25 Submitting a file upload
+This assignment will require each group of 5-6 students to produce a written document containing requirements and specifications for an image processing and pattern recognition project. The project topic should be granted approval by the lecturer. The specifications must cover:
+
+analysis of the problem, including the availability of one or more suitable, public datasets;
+selection of the techniques that the students expect to solve the problem. This will include various, plausible alternatives;
+motivation for the approach based on the knowledge acquired during lectures and independent readings;
+a performance evaluation methodology which will be used to assess the approach’s performance. This will require conducting experiments on the chosen dataset(s) with the various alternative techniques and collate their performance;
+a list of references;
+the contribution of each student to the group will be described in a short table in the report.
+Rubric
+Project Requirements and Specifications
+Project Requirements and Specifications
+Criteria	Ratings	Pts
+This criterion is linked to a learning outcomeAnalysis of the problem
+The team should clearly describe the problem that the students are studying, it's importance to society as well as the support for solving the problem. This includes the availability of one or more suitable, public datasets if the team doesn't intend to collect the data themselves.
+5 pts
+This criterion is linked to a learning outcomeSelection of the techniques that the students expect to solve the problem or model the data.
+1. What techniques have students identified that might be applied to solve this problem? These should be reasonably described with possible alternatives considered.
+
+2. Motivations for the choice of the possible alternative methods should be described clearly.
+
+3. If the project involves collecting data, then what is the proposed methodology for the data collection?
+
+4. If the project involves the use of publicly available datasets, then the report should identify suitable, public datasets and describe why these datasets are appropriate for the project.
+5 pts
+This criterion is linked to a learning outcomePerformance Evaluation Methodology
+The team should be able to describe clearly how they will evaluate and compare the different methods for solving the problem and what a successful outcome should look like considering the common applications of the problem they are investigating.
+5 pts
+This criterion is linked to a learning outcomeReference List
+A list of appropriate references to show that the team have studied the problem in detail with the references correctly cited and discussed in the report.
+5 pts
+This criterion is linked to a learning outcomeProfessionally Written Report
+The report should be formatted in a professional manner with an Introduction, Conclusion, list of references (appropriately referred to in the main text), figure captions and correct citation of external sources. In addition, there should be an absence of spelling or grammar errors.
+The report should contain a table detailing the contributions of each team member to the activity.
+5 pts
+Total points: 25

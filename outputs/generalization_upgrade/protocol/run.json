@@ -1,0 +1,103 @@
+{
+  "date_utc": "2026-09-29T17:48:07.189606+00:00",
+  "config": {
+    "seed": 42,
+    "protocol_id": "source_video_disjoint_v1",
+    "historical_protocol_id": "historical_target_video_v1",
+    "approved_tiers": [
+      1,
+      2
+    ],
+    "output_dir": "outputs/generalization_upgrade",
+    "device": "auto",
+    "batch_size": 16,
+    "num_workers": 0,
+    "image_size": 224,
+    "data": {
+      "root": "data/processed",
+      "historical_splits": "data/splits_200video",
+      "external_csv": "data/deepfakeface_sd15_paired.csv",
+      "external_raw": "data/raw/deepfakeface_subset"
+    },
+    "checkpoints": {
+      "hybrid": "outputs/modal_downloads/hybrid_200video_full_best.pt",
+      "xception": "outputs/modal_downloads/xception_200video_full_best.pt"
+    },
+    "threshold_source": "validation_only",
+    "calibration_bins": 15,
+    "bootstrap_replicates": 2000,
+    "jpeg_qualities": [
+      100,
+      90,
+      60,
+      40,
+      20,
+      10
+    ],
+    "external_normalization": {
+      "image_size": 224,
+      "jpeg_quality": 90,
+      "alignment": "five_landmark_similarity",
+      "interpolation": "linear"
+    },
+    "frequency": {
+      "cutoffs": [
+        0.1,
+        0.3,
+        0.5
+      ],
+      "band_edges": [
+        0.1,
+        0.3
+      ],
+      "samples_per_group": 240,
+      "radius": "axis_nyquist",
+      "highpass_offset": 0.5
+    },
+    "representation": {
+      "samples_per_group": 240,
+      "feature_layer": "classifier_input",
+      "perplexity": 35,
+      "seed": 42
+    },
+    "gradcam": {
+      "per_category": 2,
+      "target": "fake_logit"
+    },
+    "reconstruction": {
+      "model_id": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+      "subfolder": "vae",
+      "revision": null,
+      "image_size": 256,
+      "batch_size": 4,
+      "posterior": "mode",
+      "metrics": [
+        "mse",
+        "ssim",
+        "lpips"
+      ],
+      "ff_samples_per_group": 120
+    }
+  },
+  "inputs": {
+    "data\\splits_200video\\train.csv": "00468af061595bf1c0af3ad48feaa781be166383836a8aa70bfbc9d46ea519f7",
+    "data\\splits_200video\\val.csv": "496d7d1a85a7dfb869ae375ffc58a172d2f76f279b7372de9ff7a43c92f6951b",
+    "data\\splits_200video\\test.csv": "fc2823a83bd93d05f2e9dc2795a422dba10c7066a87ace560d68bfa22592afe8"
+  },
+  "environment": {
+    "python": "3.11.9",
+    "packages": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "timm": "1.0.27",
+      "numpy": "2.4.6",
+      "pandas": "3.0.5",
+      "scikit-learn": "1.7.1",
+      "diffusers": null,
+      "lpips": null
+    },
+    "git_commit": "e6092fa08c7c846a7e06370e0bb4bc2d0ca8bff5",
+    "git_status": "M .gitignore\n M GROUP_PROJECT_SUMMARY.md\n M PROJECT_STATUS.md\n M README.md\n M notebooks/deepfake_detection_complete.ipynb\n?? config/generalization_upgrade.yaml\n?? outputs/audit/\n?? outputs/figures/hybrid_200video_tsne_domain.csv\n?? outputs/figures/hybrid_200video_tsne_domain.png\n?? outputs/figures/hybrid_200video_tsne_test.csv\n?? outputs/figures/hybrid_200video_tsne_test.png\n?? outputs/generalization_upgrade/\n?? src/eval/calibration.py\n?? src/experiments/\n?? src/interpret/tsne.py\n?? tests/test_generalization_protocol.py\n?? tests/test_tsne.py"
+  },
+  "run_id": "ea04fedb12b83cd6"
+}

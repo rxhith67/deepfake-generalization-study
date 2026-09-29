@@ -1,0 +1,144 @@
+{
+  "checkpoint": "outputs\\modal_downloads\\hybrid_200video_full_best.pt",
+  "model": "hybrid",
+  "dataset_csv": "data\\deepfakeface_sd15_paired.csv",
+  "jpeg_quality": null,
+  "metrics": {
+    "n": 576,
+    "threshold": 0.9622429609298706,
+    "accuracy": 0.5243055555555556,
+    "balanced_accuracy": 0.5243055555555556,
+    "precision": 0.6666666666666666,
+    "recall": 0.09722222222222222,
+    "specificity": 0.9513888888888888,
+    "false_positive_rate": 0.04861111111111116,
+    "f1": 0.1696969696969697,
+    "auc": 0.385693962191358,
+    "confusion": [
+      [
+        274,
+        14
+      ],
+      [
+        260,
+        28
+      ]
+    ]
+  },
+  "per_method": {
+    "StableDiffusion_v1_5": {
+      "n": 288,
+      "threshold": 0.9622429609298706,
+      "accuracy": 0.09722222222222222,
+      "balanced_accuracy": NaN,
+      "precision": 1.0,
+      "recall": 0.09722222222222222,
+      "specificity": 0.0,
+      "false_positive_rate": 1.0,
+      "f1": 0.17721518987341772,
+      "auc": NaN,
+      "confusion": [
+        [
+          0,
+          0
+        ],
+        [
+          260,
+          28
+        ]
+      ]
+    },
+    "real": {
+      "n": 288,
+      "threshold": 0.9622429609298706,
+      "accuracy": 0.9513888888888888,
+      "balanced_accuracy": NaN,
+      "precision": 0.0,
+      "recall": 0.0,
+      "specificity": 0.9513888888888888,
+      "false_positive_rate": 0.04861111111111116,
+      "f1": 0.0,
+      "auc": NaN,
+      "confusion": [
+        [
+          274,
+          14
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  },
+  "binary_per_method": {
+    "StableDiffusion_v1_5": {
+      "n": 576,
+      "threshold": 0.9622429609298706,
+      "accuracy": 0.5243055555555556,
+      "balanced_accuracy": 0.5243055555555556,
+      "precision": 0.6666666666666666,
+      "recall": 0.09722222222222222,
+      "specificity": 0.9513888888888888,
+      "false_positive_rate": 0.04861111111111116,
+      "f1": 0.1696969696969697,
+      "auc": 0.385693962191358,
+      "confusion": [
+        [
+          274,
+          14
+        ],
+        [
+          260,
+          28
+        ]
+      ]
+    }
+  },
+  "video_metrics": {
+    "n": 576,
+    "threshold": 0.9622429609298706,
+    "accuracy": 0.5243055555555556,
+    "balanced_accuracy": 0.5243055555555556,
+    "precision": 0.6666666666666666,
+    "recall": 0.09722222222222222,
+    "specificity": 0.9513888888888888,
+    "false_positive_rate": 0.04861111111111116,
+    "f1": 0.1696969696969697,
+    "auc": 0.385693962191358,
+    "confusion": [
+      [
+        274,
+        14
+      ],
+      [
+        260,
+        28
+      ]
+    ]
+  },
+  "video_binary_per_method": {
+    "StableDiffusion_v1_5": {
+      "n": 576,
+      "threshold": 0.9622429609298706,
+      "accuracy": 0.5243055555555556,
+      "balanced_accuracy": 0.5243055555555556,
+      "precision": 0.6666666666666666,
+      "recall": 0.09722222222222222,
+      "specificity": 0.9513888888888888,
+      "false_positive_rate": 0.04861111111111116,
+      "f1": 0.1696969696969697,
+      "auc": 0.385693962191358,
+      "confusion": [
+        [
+          274,
+          14
+        ],
+        [
+          260,
+          28
+        ]
+      ]
+    }
+  }
+}

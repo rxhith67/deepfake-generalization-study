@@ -1,0 +1,22 @@
+{
+  "checkpoint_sha256_verified": true,
+  "manifest_hashes_verified": true,
+  "train_methods": [
+    "Face2Face",
+    "FaceSwap",
+    "NeuralTextures",
+    "real"
+  ],
+  "val_methods": [
+    "Face2Face",
+    "FaceSwap",
+    "NeuralTextures",
+    "real"
+  ],
+  "heldout_absent_from_train_and_val": true,
+  "recomputed_val_auc": 0.9251512345679013,
+  "training_log_best_val_auc": 0.9251481481481482,
+  "abs_difference_vs_log": 3.0864197531066395e-06,
+  "tolerance": 0.001,
+  "frozen_threshold": 0.9102545976638794
+}

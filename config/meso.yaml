@@ -1,0 +1,9 @@
+defaults:
+  - base
+model:
+  name: meso
+  pretrained: false
+training:
+  batch_size: 32
+  epochs: 15
+

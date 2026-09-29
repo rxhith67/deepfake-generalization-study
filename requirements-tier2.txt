@@ -1,0 +1,5 @@
+# Optional packages for the Tier-2 VAE reconstruction experiment (src/experiments/reconstruction.py).
+# Installed in isolation so the main environment is unchanged:
+#   python -m pip install --no-deps --target .tier2_pkgs -r requirements-tier2.txt
+diffusers==0.40.0
+lpips==0.1.4

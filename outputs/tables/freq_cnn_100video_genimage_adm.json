@@ -1,0 +1,65 @@
+{
+  "checkpoint": "outputs\\checkpoints\\freq_cnn_100video_best.pt",
+  "model": "freq_cnn",
+  "dataset_csv": "data\\genimage_adm_faces.csv",
+  "jpeg_quality": null,
+  "metrics": {
+    "n": 262,
+    "threshold": 0.5,
+    "accuracy": 0.6984732824427481,
+    "precision": 0.696969696969697,
+    "recall": 0.7022900763358778,
+    "f1": 0.6996197718631179,
+    "auc": 0.7627177903385584,
+    "confusion": [
+      [
+        91,
+        40
+      ],
+      [
+        39,
+        92
+      ]
+    ]
+  },
+  "per_method": {
+    "ADM": {
+      "n": 131,
+      "threshold": 0.5,
+      "accuracy": 0.7022900763358778,
+      "precision": 1.0,
+      "recall": 0.7022900763358778,
+      "f1": 0.8251121076233184,
+      "auc": NaN,
+      "confusion": [
+        [
+          0,
+          0
+        ],
+        [
+          39,
+          92
+        ]
+      ]
+    },
+    "real": {
+      "n": 131,
+      "threshold": 0.5,
+      "accuracy": 0.6946564885496184,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": NaN,
+      "confusion": [
+        [
+          91,
+          40
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  }
+}

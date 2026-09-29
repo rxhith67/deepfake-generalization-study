@@ -1,0 +1,42 @@
+Assessment Task 2: Project Implementation
+Due 23 Oct by 23:59 Points 50 Submitting a file upload
+This assignment will require each group of students to implement the project described in their Assessment Task 1. The project will be developed as a Matlab program or using another software package as approved by teaching staff. The contribution of each student to the group will be described in a short table in the report. This assignment will consist of a written report on the outcomes of the project.
+
+Rubric
+Project Implementation
+Project Implementation
+Criteria	Ratings	Pts
+This criterion is linked to a learning outcomeIntroduction to the Problem
+This should describe the project, motivations and techniques used in a re-cap of the Project Requirements and Specifications Report. It does not need to be as detailed as the Project Requirements and Specifications Report, but should provide sufficient information for the reader to understand the nature of the project without needing to refer directly to the Project Requirements and Specifications Report. It should not be a direct copy of the Project Requirements and Specifications.
+5 pts
+This criterion is linked to a learning outcomeOverview of the project and methodology
+The report should describe methods and techniques that the team used to achieve the results shown in the later parts of the report. Results should not be presented here. This section should give an overview of the project and the techniques used. In this section, the report should answer the following questions:
+1. What did the team do to achieve the results shown later in the report? What techniques did they use?
+
+2. If the team collected the data themselves, then what was the experimental setup to collect the data?
+
+3. If the team used publicly available datasets, then what was the nature of the datasets used?
+10 pts
+This criterion is linked to a learning outcomeProject Management and Team Work
+The team should describe how the team worked together on the project and how they divided tasks between the team members. This section should include a table indicating the contribution of each team member to the overall project.
+5 pts
+This criterion is linked to a learning outcomeResults
+The report should describe the results that the team obtained. The data should be visualised in a compelling manner that demonstrates clearly the insights that the team discovered from the data or the effectiveness of models produced by the team.
+10 pts
+This criterion is linked to a learning outcomeDiscussion and Challenges
+The report should insightfully discuss what the students learnt from this project, including:
+1. Where the students able to achieve their initial goals when starting the project? Why or why not?
+
+2. What challenges did the students face during the project? How did they change or adjust their plan to account for the challenges?
+
+3. What are their thoughts on future work in this area? What would they have done if given more time?
+
+4. What did they learn about the problem from this exercise?
+10 pts
+This criterion is linked to a learning outcomeProfessionally Written Report
+The report should be formatted in a professional manner with an Introduction, Conclusion, list of references (appropriately referred to in the main text), figure captions and correct citation of external sources. In addition, there should be an absence of spelling or grammar errors.
+5 pts
+This criterion is linked to a learning outcomeAppendix with code
+The report should have an appendix with the code created. The code should be clearly and professionally commented.
+5 pts
+Total points: 50

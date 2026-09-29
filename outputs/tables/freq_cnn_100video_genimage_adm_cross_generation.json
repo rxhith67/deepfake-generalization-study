@@ -1,0 +1,191 @@
+{
+  "model": "freq_cnn",
+  "in_domain": {
+    "checkpoint": "outputs\\checkpoints\\freq_cnn_100video_best.pt",
+    "model": "freq_cnn",
+    "dataset_csv": "data\\splits\\test.csv",
+    "jpeg_quality": null,
+    "metrics": {
+      "n": 2250,
+      "threshold": 0.5,
+      "accuracy": 0.5951111111111111,
+      "precision": 0.8375094912680334,
+      "recall": 0.6127777777777778,
+      "f1": 0.7077317933910812,
+      "auc": 0.5898580246913581,
+      "confusion": [
+        [
+          236,
+          214
+        ],
+        [
+          697,
+          1103
+        ]
+      ]
+    },
+    "per_method": {
+      "Deepfakes": {
+        "n": 450,
+        "threshold": 0.5,
+        "accuracy": 0.7355555555555555,
+        "precision": 1.0,
+        "recall": 0.7355555555555555,
+        "f1": 0.8476312419974392,
+        "auc": NaN,
+        "confusion": [
+          [
+            0,
+            0
+          ],
+          [
+            119,
+            331
+          ]
+        ]
+      },
+      "Face2Face": {
+        "n": 450,
+        "threshold": 0.5,
+        "accuracy": 0.5711111111111111,
+        "precision": 1.0,
+        "recall": 0.5711111111111111,
+        "f1": 0.727015558698727,
+        "auc": NaN,
+        "confusion": [
+          [
+            0,
+            0
+          ],
+          [
+            193,
+            257
+          ]
+        ]
+      },
+      "FaceSwap": {
+        "n": 450,
+        "threshold": 0.5,
+        "accuracy": 0.5733333333333334,
+        "precision": 1.0,
+        "recall": 0.5733333333333334,
+        "f1": 0.7288135593220338,
+        "auc": NaN,
+        "confusion": [
+          [
+            0,
+            0
+          ],
+          [
+            192,
+            258
+          ]
+        ]
+      },
+      "NeuralTextures": {
+        "n": 450,
+        "threshold": 0.5,
+        "accuracy": 0.5711111111111111,
+        "precision": 1.0,
+        "recall": 0.5711111111111111,
+        "f1": 0.727015558698727,
+        "auc": NaN,
+        "confusion": [
+          [
+            0,
+            0
+          ],
+          [
+            193,
+            257
+          ]
+        ]
+      },
+      "real": {
+        "n": 450,
+        "threshold": 0.5,
+        "accuracy": 0.5244444444444445,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auc": NaN,
+        "confusion": [
+          [
+            236,
+            214
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "cross_generation": {
+    "checkpoint": "outputs\\checkpoints\\freq_cnn_100video_best.pt",
+    "model": "freq_cnn",
+    "dataset_csv": "data\\genimage_adm_faces.csv",
+    "jpeg_quality": null,
+    "metrics": {
+      "n": 262,
+      "threshold": 0.5,
+      "accuracy": 0.6984732824427481,
+      "precision": 0.696969696969697,
+      "recall": 0.7022900763358778,
+      "f1": 0.6996197718631179,
+      "auc": 0.7627177903385584,
+      "confusion": [
+        [
+          91,
+          40
+        ],
+        [
+          39,
+          92
+        ]
+      ]
+    },
+    "per_method": {
+      "ADM": {
+        "n": 131,
+        "threshold": 0.5,
+        "accuracy": 0.7022900763358778,
+        "precision": 1.0,
+        "recall": 0.7022900763358778,
+        "f1": 0.8251121076233184,
+        "auc": NaN,
+        "confusion": [
+          [
+            0,
+            0
+          ],
+          [
+            39,
+            92
+          ]
+        ]
+      },
+      "real": {
+        "n": 131,
+        "threshold": 0.5,
+        "accuracy": 0.6946564885496184,
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "auc": NaN,
+        "confusion": [
+          [
+            91,
+            40
+          ],
+          [
+            0,
+            0
+          ]
+        ]
+      }
+    }
+  },
+  "auc_drop": -0.1728597656472003
+}

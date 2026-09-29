@@ -1,0 +1,10 @@
+{
+  "finite_all_metrics": true,
+  "mse_nonnegative": true,
+  "ssim_in_range": true,
+  "lpips_nonnegative": true,
+  "unique_sample_ids": true,
+  "two_classes": true,
+  "expected_n": true,
+  "balanced": true
+}

@@ -1,0 +1,21 @@
+Assessment Task 3: Project Research Presentation
+Due 23 Oct by 23:59 Points 25 Submitting a file upload
+This task will involve each student presenting a critical review of an academic research paper related to the topic studied in Assessment Tasks 1 and 2. The student is expected to critically appraise the work in terms of the techniques applied, evaluation methods and experimental results based on knowledge obtained in the subject.
+
+Rubric
+Project Research Presentation
+Project Research Presentation
+Criteria	Ratings	Pts
+This criterion is linked to a learning outcomePresentation Quality
+Slides are well designed and engaging. Figures and charts clearly demonstrate the concepts. The speaker conveys the concepts in an engaging fashion.
+7 pts
+This criterion is linked to a learning outcomeDescription of the work
+Presentation clearly describes the science and technical detail of the reviewed work in a manner that is clear to the audience. The presentation should describe clearly the key contribution of the work and what makes the work a useful contribution to the field. If the presenter believes that the work falls short, then reasons should be clear and convincing.
+6 pts
+This criterion is linked to a learning outcomeCritique of the Experimental Design
+Presentation describes clearly the experimental design and why this design is or is not appropriate to the problem. The presentation should detail flaws or particular advantages of the experimental design.
+6 pts
+This criterion is linked to a learning outcomeOverall Judgement of the Work
+The presentation should discuss the critical aspects of the work including particular challenges or flaws in the work and future work. The presenter should give an opinion on the overall quality of the reviewed work, how it could be improved and what additional work is needed.
+6 pts
+Total points: 25

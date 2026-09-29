@@ -1,0 +1,6 @@
+{
+  "repository": "stable-diffusion-v1-5/stable-diffusion-v1-5",
+  "revision": "451f4fe16113bff5a5d2269ed5ad43b0592e9a14",
+  "license": "creativeml-openrail-m",
+  "external_generator_vae_exact_match": "NOT ESTABLISHED; SD1.5 compatibility assumption (see PROVENANCE_AND_PROTOCOL.md)"
+}

@@ -1,0 +1,118 @@
+{
+  "date_utc": "2026-09-29T18:28:03.925068+00:00",
+  "config": {
+    "project_name": "deepfake-detection",
+    "seed": 42,
+    "device": "cuda",
+    "data": {
+      "root": "/tmp/deepfake_data",
+      "train_csv": "/root/protocol/lomo_Deepfakes/train.csv",
+      "val_csv": "/root/protocol/lomo_Deepfakes/val.csv",
+      "test_csv": "/root/protocol/lomo_Deepfakes/test.csv",
+      "num_workers": 4,
+      "faceforensics": {
+        "path": "./data/processed/faceforensics",
+        "compression": "c23",
+        "methods": [
+          "Deepfakes",
+          "Face2Face",
+          "FaceSwap",
+          "NeuralTextures"
+        ],
+        "frames_per_video": 30
+      },
+      "celeb_df": {
+        "path": "./data/processed/celeb_df"
+      },
+      "ai_genbench": {
+        "path": "./data/processed/ai_genbench",
+        "face_only": true
+      }
+    },
+    "split": {
+      "train_ratio": 0.7,
+      "val_ratio": 0.15,
+      "test_ratio": 0.15,
+      "by": "video_id",
+      "seed": 42
+    },
+    "model": {
+      "name": "xception",
+      "pretrained": true,
+      "freeze_epochs": 3,
+      "freeze_fraction": 0.6
+    },
+    "training": {
+      "image_size": 299,
+      "optimizer": "adamw",
+      "lr": 0.0001,
+      "backbone_lr": 1e-05,
+      "weight_decay": 0.0001,
+      "scheduler": "cosine",
+      "epochs": 12,
+      "batch_size": 32,
+      "early_stopping_patience": 3,
+      "amp": true,
+      "threshold": 0.5,
+      "balanced_sampling": true,
+      "normalization_mean": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "normalization_std": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "interpolation": "bicubic",
+      "pin_memory": true,
+      "resumable": true
+    },
+    "augmentation": {
+      "hflip": 0.5,
+      "rotate_limit": 10,
+      "color_jitter": 0.2,
+      "jpeg_quality_range": [
+        30,
+        100
+      ],
+      "jpeg_prob": 0.5
+    },
+    "logging": {
+      "output_dir": "/mnt/deepfake/generalization_upgrade/training/lomo_Deepfakes/xception",
+      "save_top_k": 1
+    },
+    "experiment": {
+      "protocol_id": "source_video_disjoint_v1",
+      "condition": "lomo_Deepfakes",
+      "initialization": "imagenet",
+      "manifest_hashes": {
+        "train": "46e15e45dcb6895971bbf03688dd019b4f77a274f5cca8f48be93e74c6945d6b",
+        "val": "b4894630aace138796003ebe79554b38a62b444cb02ca4c0caebdf6c7f4804bd",
+        "test": "e05cae922a70dd1f62752d276c13a46ad7c0fec0545025cb3729f1b76c44f8e7"
+      }
+    }
+  },
+  "inputs": {
+    "/root/protocol/lomo_Deepfakes/train.csv": "46e15e45dcb6895971bbf03688dd019b4f77a274f5cca8f48be93e74c6945d6b",
+    "/root/protocol/lomo_Deepfakes/val.csv": "b4894630aace138796003ebe79554b38a62b444cb02ca4c0caebdf6c7f4804bd",
+    "/root/protocol/lomo_Deepfakes/test.csv": "e05cae922a70dd1f62752d276c13a46ad7c0fec0545025cb3729f1b76c44f8e7"
+  },
+  "environment": {
+    "python": "3.11.12",
+    "packages": {
+      "torch": "2.2.2",
+      "torchvision": "0.17.2",
+      "timm": "1.0.7",
+      "numpy": "1.26.4",
+      "pandas": "2.2.2",
+      "scikit-learn": "1.5.1",
+      "diffusers": null,
+      "lpips": null
+    },
+    "git_commit": "unavailable",
+    "git_status": "unavailable"
+  },
+  "run_id": "28b2543397ddb847"
+}

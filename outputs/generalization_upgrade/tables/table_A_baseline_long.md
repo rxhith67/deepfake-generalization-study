@@ -1,0 +1,10 @@
+| model | test_dataset | protocol_id | evaluation_unit | auc | accuracy | balanced_accuracy | precision | recall | f1 | ece | nll |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| hybrid | ffpp_historical | historical_target_video_v1 | frame | 0.883291 | 0.793111 | 0.784028 | 0.932577 | 0.799167 | 0.860733 | 0.135111 | 0.729486 |
+| hybrid | ffpp_historical | historical_target_video_v1 | video | 0.903889 | 0.720000 | 0.800000 | 0.975610 | 0.666667 | 0.792079 | 0.086191 | 0.345694 |
+| xception | ffpp_historical | historical_target_video_v1 | frame | 0.861677 | 0.758889 | 0.775139 | 0.938001 | 0.748056 | 0.832329 | 0.135163 | 0.608662 |
+| xception | ffpp_historical | historical_target_video_v1 | video | 0.895833 | 0.680000 | 0.762500 | 0.961538 | 0.625000 | 0.757576 | 0.101326 | 0.348586 |
+| ensemble | ffpp_historical | historical_target_video_v1 | frame | 0.880514 | 0.771556 | 0.784722 | 0.940411 | 0.762778 | 0.842331 | 0.124358 | 0.550085 |
+| hybrid | external_original | historical_target_video_v1 | frame | 0.385706 | 0.524306 | 0.524306 | 0.666667 | 0.097222 | 0.169697 | 0.464320 | 3.125944 |
+| xception | external_original | historical_target_video_v1 | frame | 0.389878 | 0.512153 | 0.512153 | 0.563636 | 0.107639 | 0.180758 | 0.427762 | 2.296333 |
+| ensemble | external_original | historical_target_video_v1 | frame | 0.382294 | 0.522569 | 0.522569 | 0.658537 | 0.093750 | 0.164134 | 0.445640 | 2.562522 |

@@ -1,0 +1,13 @@
+defaults:
+  - hybrid
+data:
+  train_csv: ./data/splits_200video_15frames/train.csv
+  val_csv: ./data/splits_200video_15frames/val.csv
+  test_csv: ./data/splits_200video_15frames/test.csv
+  # Windows worker processes proved unstable with pinned CUDA memory here.
+  num_workers: 0
+training:
+  batch_size: 16
+  pin_memory: false
+logging:
+  output_dir: ./outputs/200video

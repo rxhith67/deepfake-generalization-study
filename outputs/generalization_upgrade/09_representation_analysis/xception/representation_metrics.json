@@ -1,0 +1,16 @@
+{
+  "samples": 1680,
+  "dimensions": 2048,
+  "pca_scaling": "center only; original classifier-input units",
+  "effective_rank": 99.47518920898438,
+  "effective_rank_definition": "exp(entropy(normalized covariance eigenvalues))",
+  "pcs_90": 236,
+  "pcs_95": 405,
+  "pcs_99": 829,
+  "silhouette_label": 0.05938154086470604,
+  "silhouette_group": -0.003314173547551036,
+  "silhouette_domain": 0.10607508569955826,
+  "silhouette_label_within_ffpp": 0.10893946141004562,
+  "silhouette_label_within_external": 0.025867756456136703,
+  "silhouette_space": "original classifier-input feature space, euclidean, unstandardized"
+}

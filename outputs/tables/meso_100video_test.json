@@ -1,0 +1,122 @@
+{
+  "checkpoint": "outputs\\checkpoints\\meso_100video_best.pt",
+  "model": "meso",
+  "dataset_csv": "data\\splits\\test.csv",
+  "jpeg_quality": null,
+  "metrics": {
+    "n": 2250,
+    "threshold": 0.5,
+    "accuracy": 0.5813333333333334,
+    "precision": 0.8730434782608696,
+    "recall": 0.5577777777777778,
+    "f1": 0.680677966101695,
+    "auc": 0.6708666666666666,
+    "confusion": [
+      [
+        304,
+        146
+      ],
+      [
+        796,
+        1004
+      ]
+    ]
+  },
+  "per_method": {
+    "Deepfakes": {
+      "n": 450,
+      "threshold": 0.5,
+      "accuracy": 0.7911111111111111,
+      "precision": 1.0,
+      "recall": 0.7911111111111111,
+      "f1": 0.8833746898263027,
+      "auc": NaN,
+      "confusion": [
+        [
+          0,
+          0
+        ],
+        [
+          94,
+          356
+        ]
+      ]
+    },
+    "Face2Face": {
+      "n": 450,
+      "threshold": 0.5,
+      "accuracy": 0.5733333333333334,
+      "precision": 1.0,
+      "recall": 0.5733333333333334,
+      "f1": 0.7288135593220338,
+      "auc": NaN,
+      "confusion": [
+        [
+          0,
+          0
+        ],
+        [
+          192,
+          258
+        ]
+      ]
+    },
+    "FaceSwap": {
+      "n": 450,
+      "threshold": 0.5,
+      "accuracy": 0.36666666666666664,
+      "precision": 1.0,
+      "recall": 0.36666666666666664,
+      "f1": 0.5365853658536586,
+      "auc": NaN,
+      "confusion": [
+        [
+          0,
+          0
+        ],
+        [
+          285,
+          165
+        ]
+      ]
+    },
+    "NeuralTextures": {
+      "n": 450,
+      "threshold": 0.5,
+      "accuracy": 0.5,
+      "precision": 1.0,
+      "recall": 0.5,
+      "f1": 0.6666666666666666,
+      "auc": NaN,
+      "confusion": [
+        [
+          0,
+          0
+        ],
+        [
+          225,
+          225
+        ]
+      ]
+    },
+    "real": {
+      "n": 450,
+      "threshold": 0.5,
+      "accuracy": 0.6755555555555556,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1": 0.0,
+      "auc": NaN,
+      "confusion": [
+        [
+          304,
+          146
+        ],
+        [
+          0,
+          0
+        ]
+      ]
+    }
+  }
+}
